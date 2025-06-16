@@ -1,11 +1,19 @@
 #include <stdio.h>
-
+void printDouble(int n)
+{
+    int i=1;
+    while (i<n)
+    {
+        printf("%d\n",i);
+        i *=2;
+    }
+}
 int main(void)
 {
-    for (int i=0; i<10; i++)
-    {
-        printf("hello\n");
-    }
+    int n;
+printf(" nhập giá trị n:");
+    scanf("%d",&n);
+    printDouble(n);
+//dọ phuc tap thoi gian  :O(log)n
     return 0;
-    // độ phức tạp thời gian là :0(1)
 }
